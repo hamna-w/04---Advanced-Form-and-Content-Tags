@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  charset ="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intern Application Portal</title>
+
+</head>
+<body>
+
+ <noscript><strong>Notice:-</strong>javascript is disabled in your browser. this form uses pure HMTL5 and works without scripts.</noscript> 
+
+<header>
+
+ <h1>TechNova Career and Internship Portal</h1>  
+ <p>Welcome to our official recruitment portal. Please fill out the detailed form below to apply for our <b>Summer 2026</b> <i>Software Engineering Internship</i> or Junior Developer roles.</p>
+ <br>
+ <p>
+    <label for="app-progress">Application Completion Status</label>
+    <progress id="app-progress" value="40" max="100">40%</progress>
+    <span>(Step 1 of 3: Basic &amp; Technical Details)</span>
+ </p>
+ <hr>
+</header>
+<main>
+<form action="submitted" method="post" enctype="multipart/form-data">
+<input type="hidden" id="app-code" name="application-code" value="TN-2026-INT-889">
+<fieldset>
+<legend>
+    <b>1. Applicant Personal Details</b>
+</legend>
+                 <p>
+                    <label for ="ref-id">System Reference ID</label>
+                    <input type="text" id="ref-id" name="reference-id" value="REF-9901-PK" readonly>
+                 </p>
+                 <p>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full_name" minlength="3" maxlength="50" autocomplete="name" placeholder="Hamna Waris" required>
+                </p>
+
+                <p>
+                    <label for="cnic">CNIC (Format: 12345-1234567-1):</label>
+                    <input type="text" id="cnic" name="cnic" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" maxlength="15" placeholder="35202-1234567-1" required>
+                </p>
+
+                <p>
+                    <label for="age">Age (18 to 35):</label>
+                    <input type="number" id="age" name="age" min="18" max="35" step="1" required>
+                </p>
+
+                <p>
+                    <label for="legacy-code">Legacy Referral Code (Unavailable):</label>
+                    <input type="text" id="legacy-code" name="legacy_code" value="DISABLED-2025" disabled>
+                </p>
+            
+</fieldset>
+<br>
+
+<fieldset>
+                <legend><b>2. Contact &amp; Interview Availability</b></legend>
+
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="03[0-9]{2}-[0-9]{7}" autocomplete="tel" placeholder="0300-1234567" required>
+                </p>
+
+                <p>
+                    <label for="interview-slot">Preferred Interview Date &amp; Time:</label>
+                    <input type="datetime-local" id="interview-slot" name="interview_slot" min="2026-11-20" max="2026-12-31" required>
+                </p>
+
+                <p>
+                    <label for="portfolio">Portfolio / GitHub URL:</label>
+                    <input type="url" id="portfolio" name="portfolio_url" autocomplete="url" placeholder="https://github.com/username" required>
+                </p>
+            </fieldset>
+
+            <br>
+<fieldset>
+                <legend><b>3. Qualifications, Skills &amp; Documents</b></legend>
+
+            
+                <p>
+                    <strong>Minimum Qualification Example:</strong> 
+                    Candidates must hold at least a 14<sup>th</sup> or 16<sup>th</sup> grade degree (e.g., BSCS / B.Sc. with basics of H<sub>2</sub>O environmental tech or O<sub>2</sub> sensor systems for IoT roles).
+                </p>
+
+        
+                <p>
+                    <strong>Updated Experience Policy:</strong> 
+                    Minimum required experience is <del>2 years</del> <ins>0 to 6 months (Fresh graduates encouraged)</ins>.
+                </p>
+
+                
+                <p>
+                    <strong>Stipend Info:</strong> 
+                    <s>Unpaid Internship</s> — Now offering a <u>stipend-based</u> learning program!
+                </p>
+
+<p>
+                    <label for="primary-skill">Primary Technical Skill:</label>
+                    <input list="skills-list" id="primary-skill" name="primary_skill" placeholder="Choose or type a skill" required>
+                    <datalist id="skills-list">
+                        <option value="HTML5 & Semantic Web">
+                        <option value="CSS3 & Responsive Design">
+                        <option value="Python Programming">
+                        <option value="Database Management (SQL)">
+                        <option value="UI/UX Prototyping">
+                    </datalist>
+                </p>
+<p>
+                    <label for="locations">Preferred Office Locations (Hold Ctrl/Cmd to select multiple):</label><br>
+                    <select id="locations" name="locations" multiple size="3" required>
+                        <option value="lahore">Lahore Tech Park</option>
+                        <option value="islamabad">Islamabad IT Zone</option>
+                        <option value="karachi">Karachi Innovation Hub</option>
+                        <option value="remote">Remote / Work from Home</option>
+                    </select>
+                </p>
+<p>
+                    <label for="skill-meter">HTML Proficiency Benchmark:</label>
+                    <meter id="skill-meter" value="8" min="0" max="10" low="3" high="7" optimum="9">8 out of 10</meter>
+                    <span>(80% - Strong)</span>
+                </p>
+<p>
+                    <label for="score-output">Initial Eligibility Score:</label>
+                    <output id="score-output" name="eligibility_score" for="age skill-meter">85 / 100 Points</output>
+                </p>
+
+                <p>
+                    <label for="resume">Upload Resume (PDF or DOC/DOCX only):</label>
+                    <input type="file" id="resume" name="resume_file" accept=".pdf,.doc,.docx" required>
+                </p>
+
+                <p>
+                    <label for="certificates">Upload Supporting Certificates (Multiple Images/PDFs allowed):</label>
+                    <input type="file" id="certificates" name="certificates" accept=".pdf,image/*" multiple>
+                </p>
+            </fieldset>
+
+            <br>
+<fieldset>
+                <legend><b>4. Language Localization &amp; Campus Map</b></legend>
+
+            
+                <p>
+                    <strong>Multilingual Applicant Greeting (<bdi>حمنہ</bdi> / <bdi>Sara Khan</bdi>):</strong><br>
+                    Normal Text: Welcome to TechNova | 
+                    Reversed Override (<abbr title="Bi-Directional Override">BDO</abbr>): <bdo dir="rtl">TechNova Portal</bdo>
+                </p>
+
+    
+                <p>
+                    <strong>Applicant Signature / Verification Box (Canvas):</strong><br>
+                    <canvas id="signature-canvas" width="250" height="60" style="border:1px solid #000000;">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                </p>
+
+            
+                <p>
+                    <strong>Office Campus Zones (Click left or right side of the box below):</strong><br>
+                    <img src="https://via.placeholder.com/300x100/2c3e50/ffffff?text=Click+Left+(HR)+or+Right+(IT+Lab)" alt="Campus Map" usemap="#campusmap" width="300" height="100">
+                    <map name="campusmap">
+                        <area shape="rect" coords="0,0,150,100" href="#hr-department" alt="HR Department">
+                        <area shape="rect" coords="151,0,300,100" href="#it-lab" alt="IT Lab">
+                    </map>
+                </p>
+            </fieldset>
+
+            <br>
+<section id="terms">
+                <h2>Terms &amp; Conditions</h2>
+                <details>
+                    <summary>Click to read applicant declaration &amp; privacy terms</summary>
+                    <p>I hereby declare that all information provided in this application is accurate. Any <u>misrepresentation</u> may lead to disqualification.</p>
+                </details>
+                <p>
+                    <input type="checkbox" id="agree" name="agree_terms" required>
+                    <label for="agree">I agree to the Terms and Conditions.</label>
+                </p>
+            </section>
+<p>
+                <input type="submit" value="Submit Application">
+                <input type="reset" value="Reset Form">
+                <input type="button" value="Check Status (Static)">
+                <br><br>
+                <label for="img-submit">Or click the Quick Apply badge to submit:</label><br>
+                <input type="image" id="img-submit" src="https://via.placeholder.com/140x40/27ae60/ffffff?text=Quick+Submit" alt="Quick Submit Button" width="140" height="40">
+            </p>
+
+        </form>
+<template id="experience-row-template">
+            <div class="experience-entry">
+                <p>Company Name: <span>[Reusable Template Slot]</span></p>
+            </div>
+        </template>
+
+    </main>
+
+
+    <footer>
+        <hr>
+        <p><small>&copy; 2026 TechNova Recruitment System. Built with pure HTML5.</small></p>
+    </footer>
+
+</body>
+
+</html>
